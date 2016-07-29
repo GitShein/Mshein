@@ -1,0 +1,30 @@
+/* 存放组件库 */
+
+/* 清除浮动 */
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+/* 根据不同dpr设置不同的字体大小 */
+@mixin font-dpr($font-size) {
+     font-size: $font-size;
+    [data-dpr="2"] & {
+         font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+         font-size: $font-size * 3;
+    }
+}
+
+@mixin prefix-property($name, $value) {
+    -webkit-#{$name}: $value;
+       -moz-#{$name}: $value;
+        -ms-#{$name}: $value;
+         -o-#{$name}: $value;
+            #{$name}: $value;
+}

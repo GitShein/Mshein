@@ -3,16 +3,34 @@
 <head>
     <meta charset="utf-8" />
     <title>demo</title>
-    <meta name="flexible" content="initial-dpr=2" />
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
     <meta content="telephone=no,email=no" name="format-detection">
     <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
-    <link rel="stylesheet" type="text/css" href="../css/demo.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
     <script type="text/javascript" src="../js/flexible.js"></script>
     <script type="text/javascript" src="../js/flexible_css.js"></script>
 </head>
 <body>
-    
+    <header class="mshe-header clearfix">
+        <div class="mshe-left"><i class="iconfont">&#xe615;</i><i class="iconfont">&#xe616;</i></div>
+        <div class="mshe-right"><i class="iconfont">&#xe63c;</i><i class="iconfont">&#xe63c;</i></div>
+        <h1 class="mshe-title"><i class="iconfont">&#xe614;</i></h1>
+    </header>
+    <br/>
+    <div class="wrapper">
+        <div class="mshe-layer mshe-alert">
+            <div class="mshe-layer-content">弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框</div>
+            <div class="mshe-tCenter"><a class="mshe-btn">alert</a></div>
+            <i class="iconfont">&#xe655;</i>
+        </div>
+        <br/>
+        <div class="mshe-layer mshe-confirm">
+            <div class="mshe-layer-content">弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框弹出框</div>
+            <div class="mshe-tCenter"><a class="mshe-btn">confirm</a><a class="mshe-btn">confirm</a></div>
+            <i class="iconfont">&#xe655;</i>
+        </div>
+    </div>
 </body>
 </html>

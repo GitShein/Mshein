@@ -23,20 +23,16 @@
     float: right;
 }
 
-.mshe-tLeft {
+.mshe-tleft {
     text-align: left;
 }
 
-.mshe-tCenter {
+.mshe-tcenter {
     text-align: center;
 }
 
-.mshe-tRight {
+.mshe-tright {
     text-align: right;
-}
-
-.mshe-marTop {
-    margin-top: 0.2rem;
 }
 
 .clearfix:after {
@@ -56,11 +52,11 @@
 }
 
 .mshe-header div {
-    font-size: 18px;
+    font-size: 36px;
 }
 
-[data-dpr="2"] .mshe-header div {
-    font-size: 36px;
+[data-dpr="1"] .mshe-header div {
+    font-size: 18px;
 }
 
 [data-dpr="3"] .mshe-header div {
@@ -84,11 +80,11 @@
 }
 
 .mshe-header h1 {
-    font-size: 24px;
+    font-size: 48px;
 }
 
-[data-dpr="2"] .mshe-header h1 {
-    font-size: 48px;
+[data-dpr="1"] .mshe-header h1 {
+    font-size: 24px;
 }
 
 [data-dpr="3"] .mshe-header h1 {
@@ -133,7 +129,7 @@
 .mshe-btn {
     display: inline-block;
     padding: 0.133333rem 0.533333rem;
-    font-size: 14px;
+    font-size: 28px;
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
@@ -150,8 +146,8 @@
     border-radius: 0.053333rem;
 }
 
-[data-dpr="2"] .mshe-btn {
-    font-size: 28px;
+[data-dpr="1"] .mshe-btn {
+    font-size: 14px;
 }
 
 [data-dpr="3"] .mshe-btn {
@@ -160,13 +156,37 @@
 
 .mshe-layer-content {
     padding: 0.266667rem;
-    font-size: 12px;
+    font-size: 24px;
 }
 
-[data-dpr="2"] .mshe-layer-content {
-    font-size: 24px;
+[data-dpr="1"] .mshe-layer-content {
+    font-size: 12px;
 }
 
 [data-dpr="3"] .mshe-layer-content {
     font-size: 36px;
+}
+
+/* 表单控件样式 */
+.mshe-input {
+    box-sizing: border-box;
+    display: block;
+    width: 9.2rem;
+    height: 0.8rem;
+    padding: 0.133333rem;
+    font-size: 28px;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+[data-dpr="1"] .mshe-input {
+    font-size: 14px;
+}
+
+[data-dpr="3"] .mshe-input {
+    font-size: 42px;
 }

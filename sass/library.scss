@@ -13,11 +13,11 @@
 /* 根据不同dpr设置不同的字体大小 */
 @mixin font-dpr($font-size) {
      font-size: $font-size;
-    [data-dpr="2"] & {
-         font-size: $font-size * 2;
+    [data-dpr="1"] & {
+         font-size: $font-size * 0.5;
     }
     [data-dpr="3"] & {
-         font-size: $font-size * 3;
+         font-size: $font-size * 1.5;
     }
 }
 
@@ -27,4 +27,13 @@
         -ms-#{$name}: $value;
          -o-#{$name}: $value;
             #{$name}: $value;
+}
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
 }

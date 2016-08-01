@@ -1,0 +1,57 @@
+@import "library";
+.goods-title {
+    margin-top: 0.293333rem;
+    p {
+        @include font-dpr(24px);
+        margin-bottom: 0.08rem;
+    }
+}
+.goods-sort {
+    margin-top: 0.4rem;
+    margin-bottom: 0.786667rem;
+    @include font-dpr(24px);
+    p {
+        color: #999;
+        @include font-dpr(22px);
+    }
+}
+.goods-list {
+    h3 {
+        @include font-dpr(28px);
+        color: #222;
+        margin-bottom: 0.4rem;
+    }
+    ul {
+        @include flexbox;
+        flex-flow: row wrap;
+        li {
+            margin: 0 0.053333rem;
+            margin-bottom: 0.2rem;
+            img {
+                width: 2.986667rem;
+                height: 3.973333rem;
+            }
+            .info {
+                position: relative;
+                i {
+                    position: absolute;
+                    right: 0.106667rem;
+                    top: 0.106667rem;
+                    @include font-dpr(36px);
+                }
+            }
+            span {
+                @include font-dpr(24px);
+                display: block;
+            }
+            del {
+                @include font-dpr(22px);
+                color: #ccc;
+            }
+        }
+        li:nth-child(3n+1) {
+            margin: 0;
+            margin-bottom: 0.2rem;
+        }
+    }
+}

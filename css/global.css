@@ -2,6 +2,213 @@
 /* 存放组件库 */
 /* 清除浮动 */
 /* 根据不同dpr设置不同的字体大小 */
+@font-face {
+    font-family: 'iconfont';
+    src: url("http://at.alicdn.com/t/font_1468218688_2568824.eot");
+    /* IE9*/
+    src: url("http://at.alicdn.com/t/font_1468218688_2568824.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1468218688_2568824.woff") format("woff"), url("http://at.alicdn.com/t/font_1468218688_2568824.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1468218688_2568824.svg#iconfont") format("svg");
+    /* iOS 4.1- */
+}
+
+/* icon图标类 */
+.iconfont {
+    font-family: iconfont;
+}
+
+.mshe-left {
+    float: left;
+}
+
+.mshe-right {
+    float: right;
+}
+
+.mshe-tleft {
+    text-align: left;
+}
+
+.mshe-tcenter {
+    text-align: center;
+}
+
+.mshe-tright {
+    text-align: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 导航 */
+.mshe-header {
+    padding: 0 0.4rem;
+    height: 1.173333rem;
+    line-height: 1.173333rem;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.mshe-header div {
+    font-size: 36px;
+}
+
+[data-dpr="1"] .mshe-header div {
+    font-size: 18px;
+}
+
+[data-dpr="3"] .mshe-header div {
+    font-size: 54px;
+}
+
+.mshe-header div i + i {
+    margin-left: 0.373333rem;
+}
+
+.mshe-header .mshe-title {
+    position: absolute;
+    right: 0.4rem;
+    left: 0.4rem;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mshe-header h1 {
+    font-size: 48px;
+}
+
+[data-dpr="1"] .mshe-header h1 {
+    font-size: 24px;
+}
+
+[data-dpr="3"] .mshe-header h1 {
+    font-size: 72px;
+}
+
+.mshe-header .mshe-left {
+    float: left;
+}
+
+.mshe-header .mshe-right {
+    float: right;
+}
+
+.wrapper {
+    padding: 0 0.4rem;
+}
+
+/* alert 弹出框 */
+.mshe-layer {
+    width: 7.466667rem;
+    border: 1px solid #cdcdcd;
+    box-sizing: content-box;
+}
+
+.mshe-layer a {
+    background: #000;
+    color: #fff;
+}
+
+.mshe-layer a + a {
+    margin-left: 0.2rem;
+}
+
+.mshe-layer i {
+    font-size: 36px;
+    color: #5EBD66;
+}
+
+.mshe-layer-content {
+    padding: 0.56rem 0.533333rem;
+}
+
+.mshe-layer-content h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 0.213333rem;
+}
+
+[data-dpr="1"] .mshe-layer-content h2 {
+    font-size: 16px;
+}
+
+[data-dpr="3"] .mshe-layer-content h2 {
+    font-size: 48px;
+}
+
+.mshe-layer-content p {
+    font-size: 24px;
+    color: #999;
+    line-height: 0.48rem;
+}
+
+[data-dpr="1"] .mshe-layer-content p {
+    font-size: 12px;
+}
+
+[data-dpr="3"] .mshe-layer-content p {
+    font-size: 36px;
+}
+
+/* 表单控件样式 */
+.mshe-input {
+    box-sizing: border-box;
+    display: block;
+    width: 9.2rem;
+    height: 0.8rem;
+    padding: 0.133333rem;
+    font-size: 28px;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+[data-dpr="1"] .mshe-input {
+    font-size: 14px;
+}
+
+[data-dpr="3"] .mshe-input {
+    font-size: 42px;
+}
+
+.mshe-checkbox, .mshe-radio {
+    position: relative;
+}
+
+.mshe-checkbox input[type=checkbox], .mshe-radio input[type=radio] {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    border: 1px solid #ddd;
+    outline: 0 !important;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+.mshe-checkbox input[type=checkbox]:before, .mshe-radio input[type=radio]:before {
+    font-family: 'iconfont';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    color: #aaa;
+    border-radius: 0;
+    background: 0 0;
+    -webkit-font-smoothing: antialiased;
+}
+
 /* button样式*/
 .mshe-btn {
     display: inline-block;

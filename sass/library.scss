@@ -28,3 +28,12 @@
          -o-#{$name}: $value;
             #{$name}: $value;
 }
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}

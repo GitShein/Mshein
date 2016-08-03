@@ -25,14 +25,15 @@
         @include flexbox;
         flex-flow: row wrap;
         li {
-            margin: 0 0.053333rem;
-            margin-bottom: 0.2rem;
+            margin-right: 0.12rem;
             img {
                 width: 2.986667rem;
                 height: 3.973333rem;
             }
             .info {
                 position: relative;
+                height: 0.866667rem;
+                padding-bottom: 0.4rem;
                 i {
                     position: absolute;
                     right: 0.106667rem;
@@ -49,9 +50,8 @@
                 color: #ccc;
             }
         }
-        li:nth-child(3n+1) {
-            margin: 0;
-            margin-bottom: 0.2rem;
+        li:nth-child(3n) {
+            margin-right: 0;
         }
     }
 }

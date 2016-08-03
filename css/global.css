@@ -105,10 +105,9 @@
 
 /* alert 弹出框 */
 .mshe-layer {
-    width: 6.0rem;
+    width: 7.466667rem;
     border: 1px solid #cdcdcd;
-    padding: 0.4rem;
-    position: relative;
+    box-sizing: content-box;
 }
 
 .mshe-layer a {
@@ -121,49 +120,39 @@
 }
 
 .mshe-layer i {
-    position: absolute;
-    top: 0.2rem;
-    right: 0.2rem;
-}
-
-.mshe-btn {
-    display: inline-block;
-    padding: 0.133333rem 0.533333rem;
-    font-size: 28px;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-touch-action: manipulation;
-    -moz-touch-action: manipulation;
-    -ms-touch-action: manipulation;
-    -o-touch-action: manipulation;
-    touch-action: manipulation;
-    border-radius: 0.053333rem;
-}
-
-[data-dpr="1"] .mshe-btn {
-    font-size: 14px;
-}
-
-[data-dpr="3"] .mshe-btn {
-    font-size: 42px;
+    font-size: 36px;
+    color: #5EBD66;
 }
 
 .mshe-layer-content {
-    padding: 0.266667rem;
-    font-size: 24px;
+    padding: 0.56rem 0.533333rem;
 }
 
-[data-dpr="1"] .mshe-layer-content {
+.mshe-layer-content h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 0.213333rem;
+}
+
+[data-dpr="1"] .mshe-layer-content h2 {
+    font-size: 16px;
+}
+
+[data-dpr="3"] .mshe-layer-content h2 {
+    font-size: 48px;
+}
+
+.mshe-layer-content p {
+    font-size: 24px;
+    color: #999;
+    line-height: 0.48rem;
+}
+
+[data-dpr="1"] .mshe-layer-content p {
     font-size: 12px;
 }
 
-[data-dpr="3"] .mshe-layer-content {
+[data-dpr="3"] .mshe-layer-content p {
     font-size: 36px;
 }
 
@@ -189,4 +178,90 @@
 
 [data-dpr="3"] .mshe-input {
     font-size: 42px;
+}
+
+.mshe-checkbox, .mshe-radio {
+    position: relative;
+}
+
+.mshe-checkbox input[type=checkbox], .mshe-radio input[type=radio] {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    border: 1px solid #ddd;
+    outline: 0 !important;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+.mshe-checkbox input[type=checkbox]:before, .mshe-radio input[type=radio]:before {
+    font-family: 'iconfont';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    color: #aaa;
+    border-radius: 0;
+    background: 0 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* button */
+.mshe-btn {
+    width: 100%;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    box-sizing: content-box;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-touch-action: manipulation;
+    -moz-touch-action: manipulation;
+    -ms-touch-action: manipulation;
+    -o-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+
+[data-dpr="1"] .mshe-btn {
+    font-size: 16px;
+}
+
+[data-dpr="3"] .mshe-btn {
+    font-size: 48px;
+}
+
+.mshe-btn-pri {
+    background-color: #222;
+    color: #fff;
+    width: 9.2rem;
+}
+
+.mshe-btn-pri:hover {
+    color: #9B9B9B;
+}
+
+.mshe-btn-sec {
+    border: 1px solid #222;
+    background-color: #fff;
+    color: #222;
+    width: 9.2rem;
+}
+
+.mshe-btn-sec:hover {
+    color: #9B9B9B;
 }

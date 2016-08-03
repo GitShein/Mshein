@@ -72,8 +72,7 @@
 }
 
 .goods-list ul li {
-    margin: 0 0.053333rem;
-    margin-bottom: 0.2rem;
+    margin-right: 0.12rem;
 }
 
 .goods-list ul li img {
@@ -83,6 +82,8 @@
 
 .goods-list ul li .info {
     position: relative;
+    height: 0.866667rem;
+    padding-bottom: 0.4rem;
 }
 
 .goods-list ul li .info i {
@@ -126,7 +127,6 @@
     font-size: 33px;
 }
 
-.goods-list ul li:nth-child(3n+1) {
-    margin: 0;
-    margin-bottom: 0.2rem;
+.goods-list ul li:nth-child(3n) {
+    margin-right: 0;
 }

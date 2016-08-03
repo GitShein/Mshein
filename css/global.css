@@ -4,9 +4,9 @@
 /* 根据不同dpr设置不同的字体大小 */
 @font-face {
     font-family: 'iconfont';
-    src: url("http://at.alicdn.com/t/font_1468218688_2568824.eot");
+    src: url("http://at.alicdn.com/t/font_1470206365_653918.eot");
     /* IE9*/
-    src: url("http://at.alicdn.com/t/font_1468218688_2568824.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1468218688_2568824.woff") format("woff"), url("http://at.alicdn.com/t/font_1468218688_2568824.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1468218688_2568824.svg#iconfont") format("svg");
+    src: url("http://at.alicdn.com/t/font_1470206365_653918.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1470206365_653918.woff") format("woff"), url("http://at.alicdn.com/t/font_1470206365_653918.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1470206365_653918.svg#iconfont") format("svg");
     /* iOS 4.1- */
 }
 
@@ -275,7 +275,7 @@
     line-height: 1.173333rem;
 }
 
-/*title 样式 */
+/*title 样式  全文字体样式*/
 .mshe-font1, .mshe-font2, .mshe-font3, .mshe-font4, .mshe-font5 {
     color: #333;
 }
@@ -352,4 +352,81 @@
 
 [data-dpr="3"] .mshe-title {
     font-size: 51px;
+}
+
+.mshe-listt {
+    font-size: 32px;
+    color: #222;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+[data-dpr="1"] .mshe-listt {
+    font-size: 16px;
+}
+
+[data-dpr="3"] .mshe-listt {
+    font-size: 48px;
+}
+
+/* 下拉框 */
+.mshe-dropdown {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+[data-dpr="1"] .mshe-dropdown {
+    font-size: 12px;
+}
+
+[data-dpr="3"] .mshe-dropdown {
+    font-size: 36px;
+}
+
+.dropdown-toggle {
+    position: relative;
+    width: 8.666667rem;
+    display: inline-block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0 0.266667rem;
+    margin-bottom: 0;
+    border: 1px solid #666;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-touch-action: manipulation;
+    -moz-touch-action: manipulation;
+    -ms-touch-action: manipulation;
+    -o-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+
+.dropdown-toggle span {
+    position: absolute;
+    right: 0.266667rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    border-top: 0;
+    border: 1px solid #e5e5e5;
+    width: 9.2rem;
+}
+
+.dropdown-menu li {
+    height: 0.946667rem;
+    line-height: 0.946667rem;
+    padding: 0 0.266667rem;
+    border-bottom: 1px solid #e5e5e5;
 }

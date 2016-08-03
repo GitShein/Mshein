@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* 存放组件库 */
+/* 清除浮动 */
+/* 根据不同dpr设置不同的字体大小 */
+.mshe-sidebar {
+    width: 8.4rem;
+}
+
+.mshe-sidebar .sidebar-title {
+    font-weight: bold;
+    padding-left: 0.8rem;
+    border-bottom: 2px solid #E5E5E5;
+    height: 1.306667rem;
+    line-height: 1.306667rem;
+}

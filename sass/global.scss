@@ -45,21 +45,27 @@
 }
 
 /*title 样式 */
-.mshe-title1,.mshe-title2,.mshe-title3,.mshe-title4,.mshe-title5{
+.mshe-font1,.mshe-font2,.mshe-font3,.mshe-font4,.mshe-font5{
     color: #333;
 }
-.mshe-title1{
+.mshe-font1{
     @include font-dpr(36px);
 }
-.mshe-title2{
+.mshe-font2{
      @include font-dpr(32px);
 }
-.mshe-title3{
+.mshe-font3{
      @include font-dpr(28px);
 }
-.mshe-title4{
+.mshe-font4{
      @include font-dpr(24px);
 }
-.mshe-title5{
+.mshe-font5{
      @include font-dpr(22px);
+}
+
+.mshe-title{
+    @include font-dpr(34px);
+    color: #222;
+    text-transform: capitalize;
 }

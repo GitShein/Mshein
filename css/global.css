@@ -69,66 +69,80 @@
 }
 
 /*title 样式 */
-.mshe-title1, .mshe-title2, .mshe-title3, .mshe-title4, .mshe-title5 {
+.mshe-font1, .mshe-font2, .mshe-font3, .mshe-font4, .mshe-font5 {
     color: #333;
 }
 
-.mshe-title1 {
+.mshe-font1 {
     font-size: 36px;
 }
 
-[data-dpr="1"] .mshe-title1 {
+[data-dpr="1"] .mshe-font1 {
     font-size: 18px;
 }
 
-[data-dpr="3"] .mshe-title1 {
+[data-dpr="3"] .mshe-font1 {
     font-size: 54px;
 }
 
-.mshe-title2 {
+.mshe-font2 {
     font-size: 32px;
 }
 
-[data-dpr="1"] .mshe-title2 {
+[data-dpr="1"] .mshe-font2 {
     font-size: 16px;
 }
 
-[data-dpr="3"] .mshe-title2 {
+[data-dpr="3"] .mshe-font2 {
     font-size: 48px;
 }
 
-.mshe-title3 {
+.mshe-font3 {
     font-size: 28px;
 }
 
-[data-dpr="1"] .mshe-title3 {
+[data-dpr="1"] .mshe-font3 {
     font-size: 14px;
 }
 
-[data-dpr="3"] .mshe-title3 {
+[data-dpr="3"] .mshe-font3 {
     font-size: 42px;
 }
 
-.mshe-title4 {
+.mshe-font4 {
     font-size: 24px;
 }
 
-[data-dpr="1"] .mshe-title4 {
+[data-dpr="1"] .mshe-font4 {
     font-size: 12px;
 }
 
-[data-dpr="3"] .mshe-title4 {
+[data-dpr="3"] .mshe-font4 {
     font-size: 36px;
 }
 
-.mshe-title5 {
+.mshe-font5 {
     font-size: 22px;
 }
 
-[data-dpr="1"] .mshe-title5 {
+[data-dpr="1"] .mshe-font5 {
     font-size: 11px;
 }
 
-[data-dpr="3"] .mshe-title5 {
+[data-dpr="3"] .mshe-font5 {
     font-size: 33px;
+}
+
+.mshe-title {
+    font-size: 34px;
+    color: #222;
+    text-transform: capitalize;
+}
+
+[data-dpr="1"] .mshe-title {
+    font-size: 17px;
+}
+
+[data-dpr="3"] .mshe-title {
+    font-size: 51px;
 }

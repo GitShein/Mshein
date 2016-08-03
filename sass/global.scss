@@ -139,15 +139,13 @@
     background: 0 0;
     -webkit-font-smoothing: antialiased;
 }
-
-/* button */
+/* button样式*/
 .mshe-btn{
-    width: 100%;
-    height: 1.066667rem;
-    line-height: 1.066667rem;
-    box-sizing: content-box;
     display: inline-block;
+    height: 1.173333rem;
+    padding: 0 0.533333rem;
     margin-bottom: 0;
+    border: 1px solid #222;
     @include font-dpr(32px);
     font-weight: normal;
     text-transform: uppercase;
@@ -155,26 +153,52 @@
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    @include prefix-property(touch-action,manipulation);
+    @include prefix-property(touch-action,manipulation)
     @include prefix-property(user-select,none);
     background-image: none;
 }
-
 .mshe-btn-pri{
     background-color: #222;
     color: #fff;
-    width: 9.2rem;
-
+    border: none;
 }
 .mshe-btn-pri:hover{
     color: #9B9B9B;
 }
 .mshe-btn-sec{
-    border: 1px solid #222;
     background-color: #fff;
     color: #222;
-    width: 9.2rem;
 }
 .mshe-btn-sec:hover{
     color: #9B9B9B;
+}
+.mshe-btn-dis{
+    background-color: #e5e5e5;
+    color: #fff;
+    cursor: not-allowed;
+    border: none;
+    pointer-events: none;
+}
+.a-btn{
+    line-height: 1.173333rem;
+}
+
+/*title 样式 */
+.mshe-title1,.mshe-title2,.mshe-title3,.mshe-title4,.mshe-title5{
+    color: #333;
+}
+.mshe-title1{
+    @include font-dpr(36px);
+}
+.mshe-title2{
+     @include font-dpr(32px);
+}
+.mshe-title3{
+     @include font-dpr(28px);
+}
+.mshe-title4{
+     @include font-dpr(24px);
+}
+.mshe-title5{
+     @include font-dpr(22px);
 }

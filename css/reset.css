@@ -105,8 +105,6 @@ button,
 html input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-    border: none;
-    background: none;
     -webkit-appearance: none;
     outline: none;
 }

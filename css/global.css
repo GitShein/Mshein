@@ -4,15 +4,27 @@
 /* 根据不同dpr设置不同的字体大小 */
 @font-face {
     font-family: 'iconfont';
-    src: url("http://at.alicdn.com/t/font_1468218688_2568824.eot");
+    src: url("http://at.alicdn.com/t/font_1470206365_653918.eot");
     /* IE9*/
-    src: url("http://at.alicdn.com/t/font_1468218688_2568824.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1468218688_2568824.woff") format("woff"), url("http://at.alicdn.com/t/font_1468218688_2568824.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1468218688_2568824.svg#iconfont") format("svg");
+    src: url("http://at.alicdn.com/t/font_1470206365_653918.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1470206365_653918.woff") format("woff"), url("http://at.alicdn.com/t/font_1470206365_653918.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1470206365_653918.svg#iconfont") format("svg");
     /* iOS 4.1- */
 }
 
 /* icon图标类 */
 .iconfont {
     font-family: iconfont;
+}
+
+.icon1 {
+    font-size: 42px;
+}
+
+[data-dpr="1"] .icon1 {
+    font-size: 21px;
+}
+
+[data-dpr="3"] .icon1 {
+    font-size: 63px;
 }
 
 .mshe-left {
@@ -113,6 +125,7 @@
 .mshe-layer a {
     background: #000;
     color: #fff;
+    width: 100%;
 }
 
 .mshe-layer a + a {
@@ -157,7 +170,7 @@
 }
 
 /* 表单控件样式 */
-.mshe-input {
+.mshe-input, .mshe-select {
     box-sizing: border-box;
     display: block;
     width: 9.2rem;
@@ -166,53 +179,105 @@
     font-size: 28px;
     color: #666;
     border: 1px solid #ccc;
-    border-radius: 4px;
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-[data-dpr="1"] .mshe-input {
+[data-dpr="1"] .mshe-input, [data-dpr="1"] .mshe-select {
     font-size: 14px;
 }
 
-[data-dpr="3"] .mshe-input {
+[data-dpr="3"] .mshe-input, [data-dpr="3"] .mshe-select {
     font-size: 42px;
 }
 
-.mshe-checkbox, .mshe-radio {
+label {
+    display: inline-block;
     position: relative;
 }
 
-.mshe-checkbox input[type=checkbox], .mshe-radio input[type=radio] {
-    position: absolute;
-    top: 4px;
-    right: 20px;
-    display: inline-block;
-    width: 28px;
-    height: 26px;
-    border: 1px solid #ddd;
-    outline: 0 !important;
-    background-color: transparent;
-    -webkit-appearance: none;
+.none {
+    display: none;
 }
 
-.mshe-checkbox input[type=checkbox]:before, .mshe-radio input[type=radio]:before {
-    font-family: 'iconfont';
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1;
-    text-decoration: none;
-    color: #aaa;
-    border-radius: 0;
-    background: 0 0;
-    -webkit-font-smoothing: antialiased;
+.block {
+    display: block;
+}
+
+.mshe-checked {
+    width: 0.586667rem;
+    height: 0.586667rem;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.mshe-checked:hover {
+    border: 1px solid #999;
+}
+
+.mshe-checked i {
+    width: 0.373333rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.096667rem;
+    border: 3px solid #222;
+    border-top: none;
+    border-right: none;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.mshe-checked.disabled {
+    border: 1px solid #f5f5f5;
+}
+
+.mshe-checked.disabled i {
+    border: 3px solid #e5e5e5;
+    border-top: none;
+    border-right: none;
+}
+
+.mshe-radioed {
+    width: 0.586667rem;
+    height: 0.586667rem;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+}
+
+.mshe-radioed:hover {
+    border: 1px solid #999;
+}
+
+.mshe-radioed i {
+    width: 0.293333rem;
+    height: 0.293333rem;
+    position: absolute;
+    left: 0.146667rem;
+    top: 0.146667rem;
+    border-radius: 100%;
+    background: #222222;
+}
+
+.mshe-radioed.disabled {
+    border: 1px solid #f5f5f5;
+}
+
+.mshe-radioed.disabled i {
+    background: #e5e5e5;
 }
 
 /* button样式*/
 .mshe-btn {
     display: inline-block;
     height: 1.173333rem;
+    line-height: 1.173333rem;
+    box-sizing: border-box;
     padding: 0 0.533333rem;
     margin-bottom: 0;
     border: 1px solid #222;
@@ -338,4 +403,58 @@
 
 [data-dpr="3"] .mshe-title5 {
     font-size: 33px;
+}
+
+/* 商品列表样式 */
+.goods-list ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.goods-list ul li {
+    margin-right: 0.12rem;
+}
+
+.goods-list ul li img {
+    width: 2.986667rem;
+    height: 3.973333rem;
+}
+
+.goods-list ul li .info {
+    position: relative;
+    height: 0.866667rem;
+    padding-bottom: 0.4rem;
+}
+
+.goods-list ul li .info i {
+    position: absolute;
+    right: 0.106667rem;
+    top: 0.106667rem;
+    font-size: 36px;
+}
+
+[data-dpr="1"] .goods-list ul li .info i {
+    font-size: 18px;
+}
+
+[data-dpr="3"] .goods-list ul li .info i {
+    font-size: 54px;
+}
+
+.goods-list ul li span {
+    display: block;
+}
+
+.goods-list ul li del {
+    color: #ccc;
+}
+
+.goods-list ul li:nth-child(3n) {
+    margin-right: 0;
 }

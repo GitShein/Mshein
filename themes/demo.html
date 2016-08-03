@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/global.css">
     <script type="text/javascript" src="../js/flexible.js"></script>
-   <!--  <script type="text/javascript" src="../js/flexible_css.js"></script> -->
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
 </head>
 <body>
     <header class="mshe-header clearfix">
@@ -18,47 +18,97 @@
         <div class="mshe-right"><i class="iconfont">&#xe63c;</i><i class="iconfont">&#xe63c;</i></div>
         <h1 class="mshe-title"><i class="iconfont">&#xe614;</i></h1>
     </header>
-    <br/>
     <div class="wrapper">
-        <div class="mshe-layer mshe-alert">
-            <div class="mshe-layer-content mshe-tcenter">
-                <h2>How do you......?</h2>
-                <p>If you could ......</p>
-            </div>
-            <div class="mshe-tCenter"><a class="mshe-btn">DONE</a></div>
-        </div>
         <br/>
+        <label class="mshe-checked">
+            <i class="none"></i>
+        </label>
 
-        <div class="mshe-layer mshe-alert">
-            <div class="mshe-layer-content mshe-tcenter">
-                <h2>How do you......?</h2>
-                <p>It was a humorously perilous business for both of us.</p>
-            </div>
-            <div class="mshe-tCenter"><a class="mshe-btn">DONE</a></div>
-        </div>
+        <label class="mshe-checked">
+            <i style="display: inline;"></i>
+        </label>
+
+        <label class="mshe-checked disabled">
+            <i style="display: none;"></i>
+        </label>
+
+        <label class="mshe-checked disabled">
+            <i style="display: inline;"></i>
+        </label>
+        <br />
+
+        <label class="mshe-radioed">
+            <i class="none"></i>
+        </label>
+
+        <label class="mshe-radioed">
+            <i style="display: inline"></i>
+        </label>
+
+        <label class="mshe-radioed disabled">
+            <i style="display: none"></i>
+        </label>
+
+        <label class="mshe-radioed disabled">
+            <i style="display: inline"></i>
+        </label>
+
         <br/>
-
-        <div class="mshe-layer mshe-alert">
-            <div class="mshe-layer-content mshe-tcenter">
-                <div><i class="iconfont">&#xe632;</i></div>
-                <h2>Successful!</h2>
+        <div class="wrapper">
+            <div class="mshe-layer mshe-alert">
+                <div class="mshe-layer-content mshe-tcenter">
+                    <h2>How do you......?</h2>
+                    <p>If you could ......</p>
+                </div>
+                <div class="mshe-tCenter"><a class="mshe-btn">DONE</a></div>
             </div>
-        </div>
-        <br/>
+            <br/>
 
-        <div class="mshe-layer mshe-alert">
-            <div class="mshe-layer-content mshe-tcenter">
-                <div><i class="iconfont">&#xe632;</i></div>
-                <h2>Successful!</h2>
-                <p>It was a humorously perilous business for both of us.</p>
+            <div class="mshe-layer mshe-alert">
+                <div class="mshe-layer-content mshe-tcenter">
+                    <h2>How do you......?</h2>
+                    <p>It was a humorously perilous business for both of us.</p>
+                </div>
+                <div class="mshe-tCenter"><a class="mshe-btn">DONE</a></div>
             </div>
-        </div>
+            <br/>
 
+            <div class="mshe-layer mshe-alert">
+                <div class="mshe-layer-content mshe-tcenter">
+                    <div><i class="iconfont">&#xe632;</i></div>
+                    <h2>Successful!</h2>
+                </div>
+            </div>
+            <br/>
+
+            <div class="mshe-layer mshe-alert">
+                <div class="mshe-layer-content mshe-tcenter">
+                    <div><i class="iconfont">&#xe632;</i></div>
+                    <h2>Successful!</h2>
+                    <p>It was a humorously perilous business for both of us.</p>
+                </div>
+            </div>
+
+        </div>
+        <br />
     </div>
-    <br />
-    <div class="mshe-checkbox">
-        <input name="checkbox" value="Item 2" type="checkbox" checked="">checked
-    </div>
+    
+    <script type="text/javascript">
+        ({
+            init: function(){
+                this.radioClick();
+            },
+            radioClick: function(){
+                $('.mshe-checked').click(function(){
+                    $(this).find('i').toggleClass('block');
+                });
+
+                $('.mshe-radioed').click(function(){
+                    $(this).find('i').addClass('block');
+                });
+            }
+        }).init();
+    </script>
 </body>
 </html>
     

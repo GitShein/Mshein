@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>商品列表页</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/goods-list.css">
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+</head>
+<body>
+    <header class="mshe-header clearfix">
+        <div class="mshe-left"><i class="iconfont icon1">&#xe604;</i><i class="iconfont icon1">&#xe606;</i></div>
+        <div class="mshe-right"><i class="iconfont">&#xe604;</i><i class="iconfont">&#xe604;</i></div>
+        <h1 class="mshe-title"><i class="iconfont icon1">&#xe608;</i></h1>
+    </header>
+    <section class="wrapper">
+        <div class="goods-title">
+            <p class="mshe-title4">PRE-ORDER</p>
+            <div class="mshe-pos">
+                <div class="mshe-select">DRESSES</div>
+                <ul class="dropdown-menu none">
+                    <li>Price Low To High</li>
+                    <li>Price Hight To Low</li>
+                    <li>Highest Rating</li>
+                    <li>Style</li>
+                    <li>Necklice</li>
+                </ul>
+                <i class="iconfont icon1">&#xe605;</i>
+            </div>
+        </div>
+        <div class="goods-sort">
+            <span class="mshe-left mshe-title4">Sort<i class="iconfont">&#xe605;</i></span>
+            <span class="mshe-right mshe-title4">Filter</span>
+            <p class="mshe-tcenter mshe-title5">1260 Items</p>
+        </div>
+        <div class="goods-list">
+            <h3 class="mshe-tcenter mshe-title3">You May Also Like</h3>
+            <ul>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1">&#xe606;</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        ({
+            init: function(){
+                this.upfold();
+            },
+            upfold: function(){
+                $('.mshe-select').click(function(){
+                    $('.dropdown-menu').toggleClass('block');
+                });
+            }
+        }).init();
+    </script>
+</body>
+</html>
+    

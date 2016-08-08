@@ -5,24 +5,32 @@
         margin-bottom: 0.08rem;
     }
     .mshe-pos {
-        position: relative;
+        padding: 0 .4rem;
+        .mshe-select {
+            position: relative;
+            i {
+                position: absolute;
+                top: -0.053333rem;
+                right: 0.133333rem;
+            }
+        }
         .dropdown-menu {
+            position: absolute;
+            right: 0;
+            left: 0;
+            background: #fff;
+            z-index: 10;
             li {
                 @include font-dpr(24px);
-                padding: 0.266667rem 0 0.266667rem 0.4rem;
+                padding: 0.266667rem 0 0.266667rem 0.8rem;
                 border-bottom: 1px solid #e5e5e5;
                 position: relative;
                 i {
                     position: absolute;
-                    right: 0.333333rem;
-                    top: 0.25rem;
+                    right: 0.8rem;
+                    top: 0.173333rem;
                 }
             }
-        }
-        i {
-            position: absolute;
-            top: 0;
-            right: 0.133333rem;
         }
     }
 }
@@ -37,10 +45,122 @@
             margin-left: 0.186667rem;
         }
     }
+    .sort-submenu {
+        position: absolute;
+        right: 0;
+        left: 0;
+        background: #fff;
+        z-index: 10;
+        li {
+            @include font-dpr(24px);
+            padding: 0.266667rem 0 0.266667rem 0.8rem;
+            border-bottom: 1px solid #e5e5e5;
+            position: relative;
+            i {
+                position: absolute;
+                right: 0.333333rem;
+                top: 0.25rem;
+            }
+        }
+    }
+}
+.goods {
+    position: relative;
+    .dropdown-mask,.sort-mask {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.3);
+        z-index: 9;
+    }
 }
 .goods-list {
     h3 {
         color: #222;
         margin-bottom: 0.4rem;
     }
+}
+
+/* Filter */
+.filter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    .show-panel {
+        padding: 0.4rem;
+        span {
+            color: #222;
+            @include font-dpr(28px);
+        }
+        a.mshe-btn{
+            float: right;
+            text-transform: capitalize;
+            height: 0.746667rem;
+            line-height: 0.746667rem;
+        }
+    }
+    .goods-filter {
+        margin-bottom: 0.4rem;
+        li {
+            a{
+                display: block;
+                padding: 0.4rem;
+                border-bottom: 1px solid #e5e5e5;
+                position: relative;
+                @include font-dpr(32px);
+                i {
+                    position: absolute;
+                    right:0.533333rem;
+                    @include font-dpr(42px);
+                    color: #666;
+                }
+            }
+            .submenu {
+                background: #f5f5f5;
+                li {
+                    float: left;
+                    text-align: center;
+                    padding:0.573333rem 1.066667rem;
+                    @include font-dpr(28px);
+                    span {
+                        width: 2.8rem;
+                        height: 0.746667rem;
+                        line-height: 0.746667rem;
+                        display: block;
+                    }
+                }
+                .choose {
+                    background: #222;
+                    color: #fff;
+                    position: relative;
+                    i {
+                        position: absolute;
+                        right: 0.266667rem;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .apply {
+        padding: 0 0.4rem;
+        margin-bottom: .4rem;
+        a {
+            width: 100%;
+        }
+    }
+}
+
+.discount-color1 {
+    color: #999;
+}
+.discount-color2 {
+    color: #E64545;
+}
+.discount-color3 {
+    color: #666;
 }

@@ -11,12 +11,30 @@
 }
 
 .goods-title .mshe-pos {
+    padding: 0 .4rem;
+}
+
+.goods-title .mshe-pos .mshe-select {
     position: relative;
+}
+
+.goods-title .mshe-pos .mshe-select i {
+    position: absolute;
+    top: -0.053333rem;
+    right: 0.133333rem;
+}
+
+.goods-title .mshe-pos .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
 }
 
 .goods-title .mshe-pos .dropdown-menu li {
     font-size: 24px;
-    padding: 0.266667rem 0 0.266667rem 0.4rem;
+    padding: 0.266667rem 0 0.266667rem 0.8rem;
     border-bottom: 1px solid #e5e5e5;
     position: relative;
 }
@@ -31,14 +49,8 @@
 
 .goods-title .mshe-pos .dropdown-menu li i {
     position: absolute;
-    right: 0.333333rem;
-    top: 0.25rem;
-}
-
-.goods-title .mshe-pos i {
-    position: absolute;
-    top: 0;
-    right: 0.133333rem;
+    right: 0.8rem;
+    top: 0.173333rem;
 }
 
 .goods-sort {
@@ -54,7 +66,177 @@
     margin-left: 0.186667rem;
 }
 
+.goods-sort .sort-submenu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+}
+
+.goods-sort .sort-submenu li {
+    font-size: 24px;
+    padding: 0.266667rem 0 0.266667rem 0.8rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+[data-dpr="1"] .goods-sort .sort-submenu li {
+    font-size: 12px;
+}
+
+[data-dpr="3"] .goods-sort .sort-submenu li {
+    font-size: 36px;
+}
+
+.goods-sort .sort-submenu li i {
+    position: absolute;
+    right: 0.333333rem;
+    top: 0.25rem;
+}
+
+.goods {
+    position: relative;
+}
+
+.goods .dropdown-mask, .goods .sort-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+}
+
 .goods-list h3 {
     color: #222;
     margin-bottom: 0.4rem;
+}
+
+/* Filter */
+.filter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+}
+
+.filter .show-panel {
+    padding: 0.4rem;
+}
+
+.filter .show-panel span {
+    color: #222;
+    font-size: 28px;
+}
+
+[data-dpr="1"] .filter .show-panel span {
+    font-size: 14px;
+}
+
+[data-dpr="3"] .filter .show-panel span {
+    font-size: 42px;
+}
+
+.filter .show-panel a.mshe-btn {
+    float: right;
+    text-transform: capitalize;
+    height: 0.746667rem;
+    line-height: 0.746667rem;
+}
+
+.filter .goods-filter {
+    margin-bottom: 0.4rem;
+}
+
+.filter .goods-filter li a {
+    display: block;
+    padding: 0.4rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    font-size: 32px;
+}
+
+[data-dpr="1"] .filter .goods-filter li a {
+    font-size: 16px;
+}
+
+[data-dpr="3"] .filter .goods-filter li a {
+    font-size: 48px;
+}
+
+.filter .goods-filter li a i {
+    position: absolute;
+    right: 0.533333rem;
+    font-size: 42px;
+    color: #666;
+}
+
+[data-dpr="1"] .filter .goods-filter li a i {
+    font-size: 21px;
+}
+
+[data-dpr="3"] .filter .goods-filter li a i {
+    font-size: 63px;
+}
+
+.filter .goods-filter li .submenu {
+    background: #f5f5f5;
+}
+
+.filter .goods-filter li .submenu li {
+    float: left;
+    text-align: center;
+    padding: 0.573333rem 1.066667rem;
+    font-size: 28px;
+}
+
+[data-dpr="1"] .filter .goods-filter li .submenu li {
+    font-size: 14px;
+}
+
+[data-dpr="3"] .filter .goods-filter li .submenu li {
+    font-size: 42px;
+}
+
+.filter .goods-filter li .submenu li span {
+    width: 2.8rem;
+    height: 0.746667rem;
+    line-height: 0.746667rem;
+    display: block;
+}
+
+.filter .goods-filter li .submenu .choose {
+    background: #222;
+    color: #fff;
+    position: relative;
+}
+
+.filter .goods-filter li .submenu .choose i {
+    position: absolute;
+    right: 0.266667rem;
+    top: 0;
+}
+
+.filter .apply {
+    padding: 0 0.4rem;
+    margin-bottom: .4rem;
+}
+
+.filter .apply a {
+    width: 100%;
+}
+
+.discount-color1 {
+    color: #999;
+}
+
+.discount-color2 {
+    color: #E64545;
+}
+
+.discount-color3 {
+    color: #666;
 }

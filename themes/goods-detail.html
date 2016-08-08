@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>商品详情页</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <link rel="stylesheet" type="text/css" href="../css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/goods-detail.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1470301440_1710477.css">
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/touch.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/pic.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/pic.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/pic.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/pic.jpg" />
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 'auto',
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    </script>
+</body>
+</html>
+    

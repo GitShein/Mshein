@@ -1,22 +1,14 @@
 @import "library";
-@font-face {
-  font-family: 'iconfont';
-  src: url('http://at.alicdn.com/t/font_1470206365_653918.eot'); /* IE9*/
-  src: url('http://at.alicdn.com/t/font_1470206365_653918.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('http://at.alicdn.com/t/font_1470206365_653918.woff') format('woff'), /* chrome、firefox */
-  url('http://at.alicdn.com/t/font_1470206365_653918.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('http://at.alicdn.com/t/font_1470206365_653918.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
-                    
-                    
-                    
-
+@charset "UTF-8";            
 /* icon图标类 */
-.iconfont {
-    font-family: iconfont;
-}
-.icon1{
+.iconfont.icon1{
     @include font-dpr(42px);
+}
+.iconfont.icon2{
+    @include font-dpr(36px);
+}
+.iconfont.icon3{
+    @include font-dpr(32px);
 }
 .mshe-left {
     float: left;
@@ -36,40 +28,16 @@
 .clearfix {
     @include clearfix;
 }
-/* 导航 */
-.mshe-header {
-    padding: 0 0.4rem;
-    height: 1.173333rem;
-    line-height: 1.173333rem;
-    border-bottom: 1px solid #cdcdcd;
-    div {
-        @include font-dpr(36px);
-        i + i {
-            margin-left: 0.373333rem;
-        }
-    }
-    .mshe-title {
-        position: absolute;
-        right: 0.4rem;
-        left: 0.4rem;
-        display: inline-block;
-        overflow: hidden;
-        width: auto;
-        text-align: center;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-    h1 {
-        @include font-dpr(48px);
-    }
-    .mshe-left {
-        float: left;
-    }
-    .mshe-right {
-        float: right;
-    }
+.none {
+    display: none;
 }
-
+.block {
+    display: block;
+}
+label {
+    display: inline-block;
+    position: relative;
+}
 .wrapper {
     padding: 0 0.4rem;
 }
@@ -81,7 +49,6 @@
     a {
         background: #000;
         color: #fff;
-        width: 100%;
     }
     a + a {
         margin-left: 0.2rem;
@@ -112,22 +79,12 @@
     width: 9.2rem;
     height: 0.8rem;
     padding: 0.133333rem;
-     @include font-dpr(28px);
+    @include font-dpr(28px);
     color: #666;
     border: 1px solid #ccc;
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-label {
-    display: inline-block;
-    position: relative;
-}
-.none{
-    display: none;
-}
-.block{
-    display: block;
 }
 .mshe-checked {
     width: 0.586667rem;
@@ -146,10 +103,7 @@ label {
         border: 3px solid #222;
         border-top: none;
         border-right: none;
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
+        @include prefix-property(transform,rotate(-45deg));
     }
 }
 .mshe-checked.disabled {
@@ -160,31 +114,36 @@ label {
         border-right: none;
     }
 }
-
 .mshe-radioed{
-     width: 0.586667rem;
+    width: 0.586667rem;
     height: 0.586667rem;
     cursor: pointer;
-    background: #fff;
     border: 1px solid #ccc;
     border-radius: 100%;
     &:hover {
         border: 1px solid #999;
     }
     i{
-        width: 0.293333rem;
-        height: 0.293333rem;
+        width: 0.24rem;
+        height: 0.133333rem;
         position: absolute;
-        left: 0.146667rem;
-        top: 0.146667rem;
-        border-radius: 100%;
-        background: #222222;
+        top: 0.173333rem;
+        left: 0.14rem;
+        border: 3px solid #fff;
+        border-top: none;
+        border-right: none;
+        @include prefix-property(transform,rotate(-45deg));
     }
+}
+.mshe-radioed.choose {
+    background: #222;
+    border: none;
 }
 .mshe-radioed.disabled {
     border:1px solid #f5f5f5;
     i {
-        background: #e5e5e5;
+        border-left: 3px solid #e5e5e5;
+        border-bottom: 3px solid #e5e5e5;
     }
 }
 /* button样式*/
@@ -233,7 +192,7 @@ label {
     line-height: 1.173333rem;
 }
 
-/*title 样式 */
+/*title 样式  全文字体样式*/
 .mshe-title1,.mshe-title2,.mshe-title3,.mshe-title4,.mshe-title5{
     color: #333;
 }
@@ -252,38 +211,70 @@ label {
 .mshe-title5{
      @include font-dpr(22px);
 }
+.mshe-title{
+    @include font-dpr(34px);
+    color: #222;
+    text-transform: capitalize;
+}
+.mshe-listtitle{
+    @include font-dpr(32px);
+    color: #222;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
 
-/* 商品列表样式 */
-.goods-list {
-    ul {
-        @include flexbox;
-        flex-flow: row wrap;
-        li {
-            margin-right: 0.12rem;
-            img {
-                width: 2.986667rem;
-                height: 3.973333rem;
-            }
-            .info {
-                position: relative;
-                height: 0.866667rem;
-                padding-bottom: 0.4rem;
-                i {
-                    position: absolute;
-                    right: 0.106667rem;
-                    top: 0.106667rem;
-                    @include font-dpr(36px);
-                }
-            }
-            span {
-                display: block;
-            }
-            del {
-                color: #ccc;
-            }
-        }
-        li:nth-child(3n) {
-            margin-right: 0;
-        }
+.gradient{ 
+    background: -moz-linear-gradient(left, #FFBDBD 100% 0%, #FF4E4E 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFBDBD), color-stop(100%,#FF4E4E)); 
+    background: -webkit-linear-gradient(left, #FFBDBD 0%,#FF4E4E 100%); 
+    background: -o-linear-gradient(left, #FFBDBD 0%,#FF4E4E 100%); 
+    background: -ms-linear-gradient(left, #FFBDBD 0%,#FF4E4E 100%); 
+    background: linear-gradient(to right, #FFBDBD 0%,#FF4E4E 100%); 
+}
+
+/* 下拉框 */
+.mshe-dropdown{
+    @include font-dpr(24px);
+    letter-spacing: 1px;
+}
+.dropdown-toggle{
+    position: relative;
+    width: 8.666667rem;
+    display: inline-block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0 0.266667rem;
+    margin-bottom: 0;
+    border: 1px solid #666;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    @include prefix-property(touch-action,manipulation)
+    @include prefix-property(user-select,none);
+    background-image: none;
+}
+.dropdown-toggle {
+    span{
+        position: absolute;
+        right: 0.266667rem;
     }
 }
+.dropdown-menu{
+    position: absolute;
+    background-color: #fff;
+    border-top: 0;
+    border:1px solid #e5e5e5;
+    width: 9.2rem;
+}
+.dropdown-menu{
+     li{
+        height: 0.946667rem;
+        line-height: 0.946667rem;
+        padding: 0 0.266667rem;
+        border-bottom:1px solid #e5e5e5;
+    }
+}
+

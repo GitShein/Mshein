@@ -41,7 +41,7 @@
             <i class="none"></i>
         </label>
 
-        <label class="mshe-radioed">
+        <label class="mshe-radioed choose">
             <i style="display: inline"></i>
         </label>
 
@@ -104,6 +104,7 @@
                 });
 
                 $('.mshe-radioed').click(function(){
+                    $(this).addClass('choose');
                     $(this).find('i').addClass('block');
                 });
             }

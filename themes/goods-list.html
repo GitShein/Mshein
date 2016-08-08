@@ -10,36 +10,49 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/global.css">
     <link rel="stylesheet" type="text/css" href="../css/goods-list.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1470301440_1710477.css">
     <script type="text/javascript" src="../js/flexible.js"></script>
     <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/touch.js"></script>
 </head>
 <body>
     <header class="mshe-header clearfix">
-        <div class="mshe-left"><i class="iconfont icon1">&#xe604;</i><i class="iconfont icon1">&#xe606;</i></div>
-        <div class="mshe-right"><i class="iconfont">&#xe604;</i><i class="iconfont">&#xe604;</i></div>
-        <h1 class="mshe-title"><i class="iconfont icon1">&#xe608;</i></h1>
+        <div class="mshe-left"><i class="iconfont icon1 icon-menu"></i><i class="iconfont icon1 icon-save"></i></div>
+        <div class="mshe-right"><i class="iconfont icon1 icon-search"></i><i class="iconfont icon1 icon-bag"></i></div>
+        <h1 class="mshe-title"><i class="iconfont icon1 icon-shein"></i></h1>
     </header>
-    <section class="wrapper">
-        <div class="goods-title">
-            <p class="mshe-title4">PRE-ORDER</p>
-            <div class="mshe-pos">
-                <div class="mshe-select">DRESSES</div>
-                <ul class="dropdown-menu none">
-                    <li>Price Low To High</li>
-                    <li>Price Hight To Low</li>
-                    <li>Highest Rating</li>
-                    <li>Style</li>
-                    <li>Necklice</li>
-                </ul>
-                <i class="iconfont icon1">&#xe605;</i>
-            </div>
+    <div class="goods-title">
+        <p class="mshe-title4 wrapper">PRE-ORDER</p>
+        <div class="mshe-pos">
+            <div class="mshe-select wrapper"><span>DRESSES</span><i class="iconfont icon1 icon-xia"></i></div>
+            <ul class="dropdown-menu none">
+                <li><span>Price Low To High</span><i class="iconfont icon3 icon-check"></i></li>
+                <li><span>Price Hight To Low</span><i class="iconfont icon3"></i></li>
+                <li><span>Highest Rating</span><i class="iconfont icon3"></i></li>
+                <li><span>Style</span><i class="iconfont icon3"></i></li>
+                <li><span>Necklice</span><i class="iconfont icon3"></i></li>
+            </ul>
         </div>
-        <div class="goods-sort">
-            <span class="mshe-left mshe-title4">Sort<i class="iconfont">&#xe605;</i></span>
-            <span class="mshe-right mshe-title4">Filter</span>
+    </div>
+    <div class="goods-sort">
+        <div class="wrapper">
+            <span class="mshe-left mshe-title4 sortType"><em>Sort</em><i class="iconfont icon-xia"></i></span>
+            <span class="mshe-right mshe-title4 filterFold">Filter</span>
             <p class="mshe-tcenter mshe-title5">1260 Items</p>
         </div>
-        <div class="goods-list">
+        <ul class="sort-submenu none">
+            <li><span>Price Low To High</span><i class="iconfont icon3 icon-check"></i></li>
+            <li><span>Price Hight To Low</span><i class="iconfont icon3"></i></li>
+            <li><span>Highest Rating</span><i class="iconfont icon3"></i></li>
+            <li><span>Style</span><i class="iconfont icon3"></i></li>
+            <li><span>Necklice</span><i class="iconfont icon3"></i></li>
+        </ul>
+    </div>
+
+    <div class="goods">
+        <div class="dropdown-mask none"></div>
+        <div class="sort-mask none"></div>
+        <div class="goods-list wrapper">
             <h3 class="mshe-tcenter mshe-title3">You May Also Like</h3>
             <ul>
                 <li>
@@ -47,7 +60,16 @@
                     <div class="info">
                         <span class="mshe-title4">US$16.99</span>
                         <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
+                        <i class="iconfont icon1 icon-save"></i>
+                    </div>
+                    <em>38</em>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <span class="mshe-title4">US$16.99</span>
+                        <del class="mshe-title5">US$16.99</del>
+                        <i class="iconfont icon1 icon-save"></i>
                     </div>
                 </li>
                 <li>
@@ -55,7 +77,7 @@
                     <div class="info">
                         <span class="mshe-title4">US$16.99</span>
                         <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
+                        <i class="iconfont icon1 icon-save"></i>
                     </div>
                 </li>
                 <li>
@@ -63,7 +85,7 @@
                     <div class="info">
                         <span class="mshe-title4">US$16.99</span>
                         <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
+                        <i class="iconfont icon1 icon-save"></i>
                     </div>
                 </li>
                 <li>
@@ -71,7 +93,7 @@
                     <div class="info">
                         <span class="mshe-title4">US$16.99</span>
                         <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
+                        <i class="iconfont icon1 icon-save"></i>
                     </div>
                 </li>
                 <li>
@@ -79,52 +101,198 @@
                     <div class="info">
                         <span class="mshe-title4">US$16.99</span>
                         <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
-                    </div>
-                </li>
-                <li>
-                    <img src="../images/pic.jpg" />
-                    <div class="info">
-                        <span class="mshe-title4">US$16.99</span>
-                        <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
-                    </div>
-                </li>
-                <li>
-                    <img src="../images/pic.jpg" />
-                    <div class="info">
-                        <span class="mshe-title4">US$16.99</span>
-                        <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
-                    </div>
-                </li>
-                <li>
-                    <img src="../images/pic.jpg" />
-                    <div class="info">
-                        <span class="mshe-title4">US$16.99</span>
-                        <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
-                    </div>
-                </li>
-                <li>
-                    <img src="../images/pic.jpg" />
-                    <div class="info">
-                        <span class="mshe-title4">US$16.99</span>
-                        <del class="mshe-title5">US$16.99</del>
-                        <i class="iconfont icon1">&#xe606;</i>
+                        <i class="iconfont icon1 icon-save"></i>
                     </div>
                 </li>
             </ul>
         </div>
-    </section>
+
+        <div class="goods-list-2 wrapper">
+            <ul>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <p>White Spaghetti Strap Pom-pom ...</p>
+                        <p>
+                            <span class="mshe-title4">US$16.99</span>
+                            <del class="mshe-title5">US$16.99</del>
+                        </p>
+                        <p>
+                            <i class="iconfont icon-24hr icon1"></i>
+                            <i class="iconfont icon1 icon-save mshe-right"></i>
+                        </p>
+                    </div>
+                    <em>38</em>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <p>White Spaghetti Strap Pom-pom ...</p>
+                        <p>
+                            <span class="mshe-title4">US$16.99</span>
+                            <del class="mshe-title5">US$16.99</del>
+                        </p>
+                        <p>
+                            <i class="iconfont icon-24hr icon1"></i>
+                            <i class="iconfont icon1 icon-save mshe-right"></i>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <div class="presale">
+                            <div class="discount">
+                                <span class="discount-color1">50% OFF</span>
+                                <span class="discount-color2">40% OFF</span>
+                                <span class="discount-color3">30% OFF</span>
+                            </div>
+                            <p><i class="gradient"></i></p>
+                        </div>
+                        <p>White Spaghetti Strap Pom-pom ...</p>
+                        <p>
+                            <span class="mshe-title4">US$16.99</span>
+                            <del class="mshe-title5">US$16.99</del>
+                        </p>
+                        <p>
+                            <i class="iconfont icon-24hr icon1"></i>
+                            <i class="iconfont icon1 icon-save mshe-right"></i>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/pic.jpg" />
+                    <div class="info">
+                        <div class="presale">
+                            <div class="discount">
+                                <span class="discount-color1">50% OFF</span>
+                                <span class="discount-color2">40% OFF</span>
+                                <span class="discount-color3">30% OFF</span>
+                            </div>
+                            <p><i class="gradient"></i></p>
+                        </div>
+                        <p>White Spaghetti Strap Pom-pom ...</p>
+                        <p>
+                            <span class="mshe-title4">US$16.99</span>
+                            <del class="mshe-title5">US$16.99</del>
+                        </p>
+                        <p>
+                            <i class="iconfont icon-24hr icon1"></i>
+                            <i class="iconfont icon1 icon-save mshe-right"></i>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filter none">
+        <header class="mshe-header">
+            <div class="mshe-right close"><i class="iconfont icon1 icon-close"></i></div>
+            <h1 class="mshe-title">Filter</h1>
+        </header>
+        <div class="show-panel">
+            <span>winter</span>&#44;
+            <span>fall</span>&#44;
+            <a class="mshe-btn mshe-btn-sec">Clear</a>
+        </div>
+        <ul class="goods-filter">
+            <li>
+                <a href="#">Season<i class="iconfont icon-anonymous-plus"></i></a>
+                <ul class="submenu none clearfix">
+                    <li><span class="choose">Winter<i class="iconfont icon-close"></i></span></li>
+                    <li><span>Summer</span></li>
+                    <li><span class="choose">Fall<i class="iconfont icon-close"></i></span></li>
+                    <li><span>Spring</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Type<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Pattern Type<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Color<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Slevee Length<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Dress Length<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Style<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Material<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Necklice<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+            <li>
+                <a href="#">Silhouete<i class="iconfont icon-anonymous-plus"></i></a>
+            </li>
+        </ul>
+        <div class="apply">
+            <a class="mshe-btn mshe-btn-pri">APPLY</a>
+        </div>
+    </div>
+
+
+
     <script type="text/javascript">
         ({
             init: function(){
                 this.upfold();
+                this.filterFold();
             },
             upfold: function(){
-                $('.mshe-select').click(function(){
+                $('.mshe-select').tap(function(){
+                    $(this).children('i').toggleClass('icon-shang');
                     $('.dropdown-menu').toggleClass('block');
+                    $('.dropdown-mask').toggleClass('block');
+                });
+                $('.sortType').tap(function(){
+                    $(this).children('i').toggleClass('icon-shang');
+                    $('.sort-submenu').toggleClass('block');
+                    $('.sort-mask').toggleClass('block');
+                });
+                $('.dropdown-mask').tap(function(){
+                    $(this).removeClass('block');
+                    $('.mshe-select').children('i').toggleClass('icon-shang');
+                    $('.dropdown-menu').removeClass('block');
+                });
+                $('.sort-mask').tap(function(){
+                    $(this).removeClass('block');
+                    $('.sortType').children('i').toggleClass('icon-shang');
+                    $('.sort-submenu').removeClass('block');
+                });
+                $('.dropdown-menu li').tap(function(){
+                    $(this).children('i').addClass('icon-check').parent().siblings().children('i').removeClass('icon-check');
+                    $(this).parent().removeClass('block');
+                    $('.mshe-select span').html($(this).find('span').html());
+                    $('.mshe-select').children('i').toggleClass('icon-shang');
+                    $('.dropdown-mask').removeClass('block');
+                });
+                $('.sort-submenu li').tap(function(){
+                    $(this).children('i').addClass('icon-check').parent().siblings().children('i').removeClass('icon-check');
+                    $(this).parent().removeClass('block');
+                    $('.sortType em').html($(this).find('span').html());
+                    $('.sortType').children('i').toggleClass('icon-shang');
+                    $('.sort-mask').removeClass('block');
+                });
+            },
+            filterFold: function(){
+                $('.filterFold').tap(function(){
+                    $('.filter').show();
+                });
+                $('.goods-filter li a').tap(function(){
+                    $(this).siblings('.submenu').toggleClass('none');
+                    $(this).find('i').toggleClass('icon-anonymous-minus');
+                });
+                $('.close').tap(function(){
+                    $('.filter').hide();
                 });
             }
         }).init();

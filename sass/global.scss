@@ -280,8 +280,10 @@ label {
 
 
 /*checkout 流程提示*/
-.checkout-step{
+.mshe-checkout-step{
     text-align: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
     .step1,.step2,.step3{
         display: inline-block;
         color: #999;

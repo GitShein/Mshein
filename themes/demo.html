@@ -11,6 +11,91 @@
     <link rel="stylesheet" type="text/css" href="../css/global.css">
     <script type="text/javascript" src="../js/flexible.js"></script>
     <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <style type="text/css">
+        /*label {
+            display: block;
+            margin: 10px 0;
+            padding: 0 10px 0 0;
+        }*/
+        .mgc {
+            position: relative;
+            width: 0.586667rem;
+            height: 0.586667rem;
+            background-clip: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: -.15px .6px 0 0;
+            vertical-align: text-bottom;
+            -webkit-transition: background-color .25s;
+            transition: background-color .25s;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        .mgc:checked {
+            background-color: #fff;
+            border-color: #ccc;
+        }
+        .mgc:checked:after {
+            border-color: #414141;
+        }
+        .mgc:checked:after {
+            content: '';
+            display: block;
+            width: 0.24rem;
+            height: 0.133333rem;
+            border: 0 solid #333;
+            border-width: 0 0 4px 4px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 0.14rem;
+            left: 0.14rem;
+        }
+
+        .mgr {
+            position: relative;
+            width: 0.586667rem;
+            height: 0.586667rem;
+            background-clip: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: -.15px .6px 0 0;
+            vertical-align: text-bottom;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #d7d7d7;
+        }
+        .mgr:checked{
+            background: #333;
+        }
+        .mgr:checked:before {
+            content: '';
+            display: block;
+            width: 0.24rem;
+            height: 0.133333rem;
+            border: 0 solid #fff;
+            border-width: 0 0 4px 4px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 0.14rem;
+            left: 0.14rem;
+        }
+        /*.mgr:checked {
+            border: 1px solid #555;
+        }
+        .mgr:checked:before {
+            background-color: #555;
+        }
+        .mgr:checked:before {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            margin: 3px 0 0 3px;
+        }*/
+    </style>
 </head>
 <body>
     <header class="mshe-header clearfix">
@@ -20,37 +105,44 @@
     </header>
     <div class="wrapper">
         <br/>
-        <label class="mshe-checked">
-            <i class="none"></i>
+
+        <label>
+            <input type="checkbox" class="mshe-checked">
         </label>
 
-        <label class="mshe-checked">
-            <i style="display: inline;"></i>
+        <label>
+            <input type="checkbox" class="mshe-checked">
         </label>
 
-        <label class="mshe-checked disabled">
-            <i style="display: none;"></i>
+        <label>
+            <input type="checkbox" class="mshe-checked" checked="">
         </label>
 
-        <label class="mshe-checked disabled">
-            <i style="display: inline;"></i>
+        <label>
+            <input type="checkbox" class="mshe-checked disabled" disabled="">
+        </label>
+
+        <label>
+            <input type="checkbox" class="mshe-checked disabled" disabled="" checked="">
         </label>
         <br />
 
-        <label class="mshe-radioed">
-            <i class="none"></i>
+
+
+        <label>
+            <input type="radio" name="radio1" class="mshe-radioed">
         </label>
 
-        <label class="mshe-radioed choose">
-            <i style="display: inline"></i>
+        <label>
+            <input type="radio" name="radio1" checked="" class="mshe-radioed">
         </label>
 
-        <label class="mshe-radioed disabled">
-            <i style="display: none"></i>
+        <label>
+            <input type="radio" name="radio1" disabled class="mshe-radioed disabled">
         </label>
 
-        <label class="mshe-radioed disabled">
-            <i style="display: inline"></i>
+        <label>
+            <input type="radio" name="radio1" disabled class="mshe-radioed disabled">
         </label>
 
         <br/>
@@ -92,24 +184,6 @@
         </div>
         <br />
     </div>
-    
-    <script type="text/javascript">
-        ({
-            init: function(){
-                this.radioClick();
-            },
-            radioClick: function(){
-                $('.mshe-checked').click(function(){
-                    $(this).find('i').toggleClass('block');
-                });
-
-                $('.mshe-radioed').click(function(){
-                    $(this).addClass('choose');
-                    $(this).find('i').addClass('block');
-                });
-            }
-        }).init();
-    </script>
 </body>
 </html>
     
